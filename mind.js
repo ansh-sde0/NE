@@ -1,8 +1,13 @@
-let a = 1
-let b = 2
+// recursion
 
-const addme = (a,b) => {
-    return a+b
+const func=(x)=>{
+
+    if(x ==0){
+        return
+    }
+
+    console.log(x)
+    func(x-1)
 }
 
-console.log(addme(a,b))
+func(10)
